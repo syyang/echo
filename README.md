@@ -21,5 +21,7 @@ for the echo thrift service.
 within eclipse. For details, see:
 http://stackoverflow.com/questions/4773784/module-sdk-for-scala-in-intellij-idea
 
-7. To clean, run ./sbt clean.
+7. To create a fat package, run ./sbt package-dist.
+
+8. To clean, run ./sbt clean.
 

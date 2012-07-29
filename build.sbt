@@ -3,6 +3,8 @@ import Keys._
 import com.twitter.sbt._
 import com.typesafe.startscript.StartScriptPlugin
 
+seq(StandardProject.newSettings: _*)
+
 name            := "foo"
 
 version         := "0.1"
@@ -34,5 +36,5 @@ CompileThriftScrooge.scroogeBuildOptions := List("--finagle")
 
 PackageDist.packageDistConfigFilesValidationRegex := Some(".*")
 
-mainClass in Compile := Some("com.foo.EchoServer")
+mainClass in Compile := Some("com.foo.echo.EchoServer")
 
